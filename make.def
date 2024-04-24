@@ -1,14 +1,13 @@
-# for the NVIDIA nvhpc compiler (nvc)
+# for g++ compiler on Linux
 # copy to make.def
-
-CC          = nvc
+CC          = g++
 CLINKER     = $(CC)
-OPTFLAGS    = -fast -mp=gpu -gpu=cc75
-LIBS        =
+OPTFLAGS    = -fopenmp -O3
+LIBS        = -lm
 PRE         = ./
 
-CFLAGS    = $(OPTFLAGS)
+CFLAGS	  = $(OPTFLAGS)
 
 OBJ=o
 EXE=
-RM=rm -f
+RM=rm
