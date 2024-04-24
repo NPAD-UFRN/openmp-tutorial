@@ -1,6 +1,6 @@
-# for g++ compiler on Linux
+# for gcc compiler on Linux
 # copy to make.def
-CC          = g++
+CC          = gcc
 CLINKER     = $(CC)
 OPTFLAGS    = -fopenmp -O3
 LIBS        = -lm
