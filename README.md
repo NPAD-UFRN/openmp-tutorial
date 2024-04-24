@@ -9,7 +9,7 @@ Starting with serial code, the tutorial takes you thorugh parallellising, explor
 * `jac_solv` – A Jacobi solver.
 * `heat` - An explicit finite difference 5-point stencil code.
 
-## Usage
+## Usage in NPAD
 
 To build all the examples:
 
@@ -17,13 +17,13 @@ To build all the examples:
 make
 ```
 
-To run, submit jobs using your training account:
+To run, submit jobs using your NPAD account:
 
 ```bash
-qsub submit_vadd     # For vector add
-qsub submit_pi       # For pi
-qsub submit_jac_solv # For Jacobi
-qsub submit_heat     # For heat
+sbatch submit_vadd     # For vector add
+sbatch submit_pi       # For pi
+sbatch submit_jac_solv # For Jacobi
+sbatch submit_heat     # For heat
 ```
 
 ## Publication history
