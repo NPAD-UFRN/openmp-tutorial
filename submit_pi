@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --partition queue0
+#SBATCH --partition gpu-4-a100 
 #SBATCH --nodes 1
 #SBATCH --time 00:02:00
 #SBATCH --job-name pi
